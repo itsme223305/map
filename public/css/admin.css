@@ -1,0 +1,39 @@
+body {
+    background: rgba(30,29,31,1);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(30,29,31,1)), color-stop(100%, rgba(223,64,90,1)));
+    background: linear-gradient(135deg, rgb(45, 93, 25) 0%, rgba(141, 223, 64) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1d1f', endColorstr='#df405a', GradientType=1 );
+    min-height: 1100px;
+}
+
+p {
+    color: black;
+}
+
+.dashboard-container {
+    position: relative;
+    display: block;
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown-menu {
+    left: -70%;
+}
+
+.select-width {
+    width: 200px;
+}
+
+.table {
+    background: white;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+}
+
+.btn {
+    background: grey;
+}

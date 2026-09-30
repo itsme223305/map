@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Gotham;
+    src: url(../assets/fonts/GothamMedium.ttf?77171d8f5b5283f9d47a3434704bf944)
+}
+@font-face {
+    font-family: Gotham-Book;
+    src: url(../assets/fonts/GothamBook.ttf?b54724f54d4dd3f6796e3c4cc422f998)
+}
+@font-face {
+    font-family: Gotham-Thin;
+    src: url(../assets/fonts/Gotham-Thin.otf?4ac7dbb4f9f9f467db596e759b8bf7db)
+}
+.politic-text{
+    padding: 40px;
+}
+.politic-text h1{
+    /* Style for "PRISTUP IN" */
+    width: 430px;
+    color: #9bca21;
+    font-family: Gotham-Book;
+    font-size: 35px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 20px 0 40px 0;
+}
+.politic-text p{
+    /* Style for "Lorem ipsu" */
+    color: #000000;
+    font-family: "Gotham-Book";
+    font-size: 12px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: left;
+    padding-right: 70px;
+}
+
+@media(max-width: 568px){
+    .politic-text{
+        padding: 20px;
+    }
+    .politic-text h1{
+        width: auto;
+        font-size: 28px;
+        margin: 20px 0 20px 0;
+    }
+    .politic-text p{
+        width: auto;
+        padding-right: initial;
+    }
+}

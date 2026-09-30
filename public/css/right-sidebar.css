@@ -1,0 +1,206 @@
+#right-sidebar {
+    min-width: 358px;
+    max-width: 358px;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    transition: all 0.3s;
+    position: absolute;
+    overflow-y: scroll;
+    z-index: 15;
+    height: 90%;
+    right: 0;
+    display: none;
+}
+
+#right-sidebar.active {
+    display: block;
+}
+
+.right-sidebar-header {
+    width: 126px;
+    height: 209px;
+    position: absolute;
+    top: -8%;
+    opacity: 1;
+    background: url(/images/green-square.png?301e993e05c19e949c117b0214ff5356);
+    background-size: cover;
+    text-align: center;
+}
+
+.right-sidebar-header-text {
+    height: 31px;
+    color: #ffffff;
+    font-family: Gotham, serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#search-icon {
+    z-index: 20;
+    opacity: 1;
+}
+
+.question {
+    font-family: "Gotham - Book", serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+.question-width {
+    width: 242px;
+}
+
+.right-sidebar-content {
+    margin-top: 170px;
+    padding: 28px;
+}
+
+.question-description {
+    font-size: 10px;
+}
+
+.custom-input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    outline:0;
+    width: 295px;
+}
+
+.custom-input:focus {
+    outline: none!important;
+}
+
+.upload-button {
+    border-radius: 0;
+    width: 83px;
+    background: gray;
+    color: #9bca21;
+    text-transform: uppercase;
+}
+
+.submit-button {
+    background: #A7D23C;
+    color: #ffffff;
+    font-family: Gotham, serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.error {
+    font-family: "Gotham - Book", serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    color: red
+}
+
+input {
+    background-color: rgba(0,0,0,0);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/*Radio styles*/
+.container {
+    position: relative;
+    display: block;
+    padding-left: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: auto;
+    /*background: #4c8731;*/
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #9bca21;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.8);
+}
+
+.container input:checked ~ .checkmark:after {
+    display: none;
+}
+
+#card-text-image {
+    width: 100%;
+    height: 150px;
+}
+
+@media (max-width: 768px) {
+    .right-sidebar-header {
+        display: none;
+    }
+
+    .right-sidebar-content {
+        margin-top: 0;
+    }
+
+    #right-sidebar {
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: -80px !important;
+        position: absolute;
+        z-index: 100;
+        height: 89%;
+        opacity: 70%;
+    }
+    #right-sidebar.active {
+        margin-left: 0 !important;
+    }
+    #right-sidebar .right-sidebar-container .uputstvo,
+    #right-sidebar .CTAs {
+        display: none;
+    }
+    #right-sidebar .right-sidebar-container strong {
+        display: block;
+    }
+    #right-sidebar {
+        margin-left: 0;
+    }
+}

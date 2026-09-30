@@ -1,0 +1,456 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+#map {
+    position: relative;
+    overflow: hidden;
+    min-height: 762px;
+}
+
+/* @media(max-width: 568px){
+
+} */
+
+@font-face {
+    font-family: Gotham;
+    src: url(../assets/fonts/GothamMedium.ttf?77171d8f5b5283f9d47a3434704bf944)
+}
+@font-face {
+    font-family: Gotham-Book;
+    src: url(../assets/fonts/GothamBook.ttf?b54724f54d4dd3f6796e3c4cc422f998)
+}
+@font-face {
+    font-family: Gotham-Thin;
+    src: url(../assets/fonts/Gotham-Thin.otf?4ac7dbb4f9f9f467db596e759b8bf7db)
+}
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.divider {
+    border-right: 1px solid #ddd;
+    height: 45px;
+}
+
+#navbar-menu {
+    background-image:url(../images/header.svg?998f56dc555e66705838ef2e23ca8e17);
+    background-size: cover;
+    min-height: 70px;
+}
+
+.navbar-brand {
+    width: 199px;
+    height: 49px;
+}
+
+#nav-link {
+    color: #ffffff;
+    font-family: Gotham, serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 5px 30px 0 30px;
+}
+
+.navbar-nav {
+    margin-left: 72px;
+}
+
+.black-line {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+}
+
+p {
+    color: #ffffff;
+    font-family: "Gotham-Book", serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: left;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+i, span {
+    display: inline-block;
+}
+/* Home site */
+#navbar_Home{
+    margin-bottom: 0 !important;
+    height: 70px;
+    background: black;
+}
+.overlay{
+    background-image: url(../assets/leefandlazar.png?e36d89495a3c34c995dcac35e0200a51);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1100px;
+    width: 100%;
+
+}
+.background{
+    padding-top: 80px;
+}
+.background a{
+    text-decoration: none;
+}
+/* Style for "Nakon što" */
+.text-under p{
+    color: #ffffff;
+    font-family: "Gotham - Book";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 14.9px;
+    text-align: center !important;
+    margin-top: 27px;
+}
+.smallest{
+    width: 55%;
+    margin: 0 auto;
+}
+.text-gotham h2{
+    /* Style for "MAPA" */
+    color: #ffffff;
+    font-family: Gotham;
+    font-size: 45px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+.text-gotham p{
+    color: #ffffff;
+    font-family: Gotham;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center !important;
+    text-transform: uppercase;
+}
+
+.selected-menu-item-color {
+    color: black !important;
+}
+.media_Icons{
+    margin: 5px;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255, 0);
+    border-color: rgba(255,255,255, 0);
+}
+.media-Bottom{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 17%;
+    align-items: flex-end;
+}
+
+.media-bottom-map{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    bottom: 3%;
+}
+
+
+.square-container {
+    width: 126px;
+    height: 209px;
+    position: absolute;
+    top: -8%;
+    right: 232px;
+    background: url(../images/green-square.png?301e993e05c19e949c117b0214ff5356);
+    background-size: cover;
+    text-align: center;
+    z-index: 1000;
+}
+
+.square-container-text {
+    height: 31px;
+    color: #ffffff;
+    font-family: Gotham, serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.border-radius-0 {
+    border-radius: 0;
+}
+
+#show-pin-card {
+    border-color: #9bca21 !important;
+}
+
+.border-green {
+    border-color: #9bca21 !important;
+}
+
+.text-green {
+    color: #9bca21 !important;
+}
+
+.font-gotham {
+    font-family: Gotham, serif;
+}
+
+.show-pin-card {
+    max-width: 18rem;
+}
+
+.labels {
+    font-size: 20px;
+}
+
+#small-logo {
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+#small-burger-image {
+    width: 45px;
+}
+
+.container-tables{
+    background-color: #ebf1f4;
+}
+
+.background-Table{
+    background-color: #eef9ff;
+}
+
+.container-tables .h1{
+    /* Style for "Pristigli" */
+    width: 450px;
+    height: 78px;
+    margin: 30px 0;
+    color: #9bca21;
+    font-family: Gotham-Book;
+    font-size: 32px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+}
+.container-tables .h3{
+    /* Style for "Oblast: ZE" */
+    width: 186px;
+    height: 16px;
+    margin: 30px 0;
+    color: #000000;
+    font-family: Gotham;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+.first-table{
+    padding: 30px;
+}
+
+table.table thead tr th{
+    border-top: none;
+    border-bottom: 2px solid #9bca21;
+}
+
+table.table tbody tr th, table.table tbody tr td{
+    border-top: 1px solid #9bca21;
+    border-bottom: 1px solid #9bca21;
+}
+thead{
+    margin-bottom: 20px;
+}
+thead tr th{
+    /* Style for "Predlog (l" */
+    width: 77px;
+    height: 22px;
+    color: #000000;
+    font-family: Gotham;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+}
+tbody > tr > th.paddingTop {
+    padding-top: 30px!important;
+}
+thead tr th:first-child, tbody tr th:first-child:not(.top-title){
+    width: 4% !important;
+    color: #000000;
+    font-family: Gotham;
+    font-size: 10px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+tbody tr td , tbody tr th:not(:first-of-type){
+    color: #000000;
+    font-family: Gotham;
+    font-size: 10px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.top-title{
+    color: #a8d340;
+    font-family: Gotham-Thin;
+    font-size: 24px;
+    padding-top: 20px !important;
+    padding-bottom: 0 !important;
+}
+
+.table-hover tbody tr:hover {
+    color: #242921 !important;
+    background-color: rgba(133, 223, 26, 0.075) !important;
+}
+
+.map-select {
+    background: grey;
+    border-radius: 0;
+    color: #9bca21;
+    width: 250px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .square-container {
+        display: none;
+    }
+
+    .nav-item .active {
+        margin-top: 10px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .selected-menu-item-color {
+        color: #9bca21 !important;
+    }
+
+    #large-logo {
+        display: none;
+    }
+
+    #small-logo {
+        display: block !important;
+    }
+
+    #navbar-menu {
+        background: black;
+    }
+
+    .black-line {
+        display: none;
+    }
+
+    .fb-icons {
+        display: none;
+    }
+}
+
+@media(max-width: 1270px){
+    .square-container {
+        display: none;
+    }
+
+    .text-gotham h2{
+        font-size: 36px;
+    }
+    .text-gotham p{
+        font-size: 12px;
+    }
+
+}
+
+@media(max-width: 1150px) {
+    .fb-icons {
+        display: none;
+    }
+}
+
+@media(max-width: 992px){
+    #navbar_Home {
+        height: auto;
+    }
+    .navbar-toggler img{
+        width: 60px;
+    }
+}
+@media(max-width: 568px){
+    .ml-5, .mx-5 {
+        margin-left: 1rem!important;
+    }
+    .navbar-brand img{
+        width: 60px;
+    }
+    .container-tables .h1{
+        width: auto;
+        font-size: 22px;
+    }
+    /*#map {*/
+        /*overflow: scroll !important;*/
+    /*}*/
+
+    /*body {*/
+    /*    overflow: scroll;*/
+    /*}*/
+}
